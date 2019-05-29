@@ -25,23 +25,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `adopcion`
---
-
-DROP TABLE IF EXISTS `adopcion`;
-CREATE TABLE IF NOT EXISTS `adopcion` (
-  `idAdopcion` int(11) NOT NULL,
-  `fecha` date NOT NULL,
-  `detalle` text NOT NULL,
-  `idAdoptante` int(11) NOT NULL,
-  `idRescatista` int(11) NOT NULL,
-  `idAnimal` int(11) NOT NULL,
-  PRIMARY KEY (`idAdopcion`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `campaña`
 --
 
