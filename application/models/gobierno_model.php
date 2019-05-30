@@ -16,7 +16,7 @@ class Gobierno_model extends CI_Model {
 
 	public function get_gobierno($id){
 		$sql = "SELECT * FROM gobierno WHERE id_gobierno = ?";
-		$query =$this->db->query($sql, $id);
+		$query =$this->db->query($sql, array($id));
 		if ($query->num_rows() > 0) {
 			return $query->result();
 		}else{
